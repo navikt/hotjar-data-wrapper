@@ -1,6 +1,6 @@
 dist/
 data/
-hotjarenv/
+venv*
 experiments/
 __pycache__/
 hotjar_data_wrapper.egg-info/
