@@ -1,13 +1,17 @@
 # %%
 import os
 
+from dotenv import load_env
+
 import hotjar_data_wrapper.hotjar_api as hot
 
 # %%
-username = os.environ["username"]
-password = os.environ["password"]
-site_id = os.environ["account"]
-survey_id = os.environ["survey_id"]
+load_dotenv()
+
+username = os.getenv("username")
+password = os.getenv("password")
+site_id = os.getenv("account")
+survey_id = os.getenv("survey_id")
 # %%
 status = hot.login_hotjar(username=username, password=password)
 status.content

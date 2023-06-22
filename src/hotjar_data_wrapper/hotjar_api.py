@@ -2,6 +2,7 @@
 import json
 import requests
 
+
 # %%
 def login_hotjar(username: str, password: str):
     """
